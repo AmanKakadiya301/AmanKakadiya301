@@ -63,8 +63,6 @@ https://github.com/AmanKakadiya301/Concurrent-Banking-Management-System
 # Contributions
 
 <p align="center">
-## 🐍 Contribution Snake
-
 <p align="center">
   <img width="100%" src="https://raw.githubusercontent.com/AmanKakadiya301/AmanKakadiya301/output/github-contribution-grid-snake.svg" alt="Contribution Snake">
 </p>
