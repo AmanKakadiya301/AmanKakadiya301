@@ -1,4 +1,4 @@
-name: Generate Snake
+name: Generate Snake Game
 
 on:
   schedule:
@@ -9,16 +9,16 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Generate Snake
-        uses: Platane/snk@v3
+        uses: Sutil/snk@master
         with:
-          github_user_name: AmanKakadiya301
-          outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=8B5CF6&color_dots=ebedf0,c6e48b,7bc96f,239a3b,196127
+          github_user_name: ${{ github.repository_owner }}
+          svg_out_path: dist/github-contribution-grid-snake.svg
+          snake_color: "#8B5CF6"
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
